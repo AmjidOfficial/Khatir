@@ -2,42 +2,46 @@
 @tailwind components;
 @tailwind utilities;
 
-/* Minimal Architecture Design System - Black & White Excellence */
+/* Khatir Real Estate & Builders - Premium Green & Gold Design System */
 
 @layer base {
   :root {
-    /* Pure Architecture Palette */
-    --background: 0 0% 100%;
-    --foreground: 0 0% 0%;
-    
+    /* Warm cream / off-white base */
+    --background: 40 33% 98%;
+    --foreground: 150 35% 12%;
+
     --card: 0 0% 100%;
-    --card-foreground: 0 0% 0%;
-    
+    --card-foreground: 150 35% 12%;
+
     --popover: 0 0% 100%;
-    --popover-foreground: 0 0% 0%;
-    
-    /* Primary: Pure Black */
-    --primary: 0 0% 0%;
-    --primary-foreground: 0 0% 100%;
-    
-    /* Secondary: Pure White */
-    --secondary: 0 0% 100%;
-    --secondary-foreground: 0 0% 0%;
-    
-    /* Muted: Subtle Gray */
-    --muted: 0 0% 96%;
-    --muted-foreground: 0 0% 20%;
-    
-    /* Accent: Elegant Gray */
-    --accent: 0 0% 95%;
-    --accent-foreground: 0 0% 0%;
-    
+    --popover-foreground: 150 35% 12%;
+
+    /* Primary: Deep emerald green (from logo) */
+    --primary: 150 60% 18%;
+    --primary-foreground: 40 33% 98%;
+
+    /* Secondary: Soft cream */
+    --secondary: 40 30% 94%;
+    --secondary-foreground: 150 60% 18%;
+
+    /* Muted: Warm beige */
+    --muted: 40 20% 94%;
+    --muted-foreground: 150 12% 35%;
+
+    /* Accent: Metallic gold */
+    --accent: 42 65% 52%;
+    --accent-foreground: 150 60% 18%;
+
+    /* Brand gold (lighter, premium) */
+    --gold: 42 65% 52%;
+    --gold-foreground: 150 60% 18%;
+
     --destructive: 0 84.2% 60.2%;
     --destructive-foreground: 0 0% 100%;
-    
-    --border: 0 0% 90%;
-    --input: 0 0% 95%;
-    --ring: 0 0% 0%;
+
+    --border: 40 20% 88%;
+    --input: 40 20% 92%;
+    --ring: 150 60% 18%;
 
     --radius: 0.5rem;
 
@@ -57,13 +61,16 @@
 
     --sidebar-ring: 217.2 91.2% 59.8%;
     
-    /* Architecture Gradients */
-    --gradient-hero: linear-gradient(135deg, hsl(0 0% 0% / 0.8), hsl(0 0% 0% / 0.4));
-    --gradient-overlay: linear-gradient(180deg, hsl(0 0% 0% / 0.9), hsl(0 0% 0% / 0.1));
-    
+    /* Brand Gradients */
+    --gradient-hero: linear-gradient(135deg, hsl(150 60% 12% / 0.85), hsl(150 60% 18% / 0.55));
+    --gradient-overlay: linear-gradient(180deg, hsl(150 60% 10% / 0.9), hsl(150 60% 10% / 0.15));
+    --gradient-gold: linear-gradient(135deg, hsl(42 70% 58%), hsl(38 60% 45%));
+    --gradient-emerald: linear-gradient(135deg, hsl(150 60% 18%), hsl(150 55% 28%));
+
     /* Elegant Shadows */
-    --shadow-architectural: 0 25px 50px -12px hsl(0 0% 0% / 0.25);
-    --shadow-elegant: 0 10px 30px -10px hsl(0 0% 0% / 0.15);
+    --shadow-architectural: 0 25px 50px -12px hsl(150 60% 10% / 0.35);
+    --shadow-elegant: 0 10px 30px -10px hsl(150 60% 10% / 0.2);
+    --shadow-gold: 0 10px 30px -10px hsl(42 65% 52% / 0.4);
     
     /* Smooth Transitions */
     --transition-smooth: all 0.6s cubic-bezier(0.16, 1, 0.3, 1);
@@ -71,33 +78,36 @@
   }
 
   .dark {
-    --background: 0 0% 0%;
-    --foreground: 0 0% 100%;
-    
-    --card: 0 0% 5%;
-    --card-foreground: 0 0% 100%;
-    
-    --popover: 0 0% 5%;
-    --popover-foreground: 0 0% 100%;
-    
-    --primary: 0 0% 100%;
-    --primary-foreground: 0 0% 0%;
-    
-    --secondary: 0 0% 10%;
-    --secondary-foreground: 0 0% 100%;
-    
-    --muted: 0 0% 10%;
-    --muted-foreground: 0 0% 60%;
-    
-    --accent: 0 0% 15%;
-    --accent-foreground: 0 0% 100%;
-    
+    --background: 150 30% 6%;
+    --foreground: 40 30% 95%;
+
+    --card: 150 25% 9%;
+    --card-foreground: 40 30% 95%;
+
+    --popover: 150 25% 9%;
+    --popover-foreground: 40 30% 95%;
+
+    --primary: 42 65% 55%;
+    --primary-foreground: 150 60% 12%;
+
+    --secondary: 150 25% 14%;
+    --secondary-foreground: 40 30% 95%;
+
+    --muted: 150 20% 14%;
+    --muted-foreground: 40 15% 65%;
+
+    --accent: 42 65% 52%;
+    --accent-foreground: 150 60% 12%;
+
+    --gold: 42 65% 55%;
+    --gold-foreground: 150 60% 12%;
+
     --destructive: 0 84.2% 60.2%;
     --destructive-foreground: 0 0% 100%;
-    
-    --border: 0 0% 15%;
-    --input: 0 0% 10%;
-    --ring: 0 0% 100%;
+
+    --border: 150 20% 18%;
+    --input: 150 20% 14%;
+    --ring: 42 65% 55%;
     --sidebar-background: 240 5.9% 10%;
     --sidebar-foreground: 240 4.8% 95.9%;
     --sidebar-primary: 224.3 76.3% 48%;
