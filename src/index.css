@@ -2,46 +2,46 @@
 @tailwind components;
 @tailwind utilities;
 
-/* Khatir Real Estate & Builders - Premium Green & Gold Design System */
+/* Khatir Real Estate & Builders - Premium Navy & Gold Design System */
 
 @layer base {
   :root {
-    /* Warm cream / off-white base */
-    --background: 40 33% 98%;
-    --foreground: 150 35% 12%;
+    /* Soft warm white base */
+    --background: 40 30% 98%;
+    --foreground: 220 40% 14%;
 
     --card: 0 0% 100%;
-    --card-foreground: 150 35% 12%;
+    --card-foreground: 220 40% 14%;
 
     --popover: 0 0% 100%;
-    --popover-foreground: 150 35% 12%;
+    --popover-foreground: 220 40% 14%;
 
-    /* Primary: Deep emerald green (from logo) */
-    --primary: 150 60% 18%;
-    --primary-foreground: 40 33% 98%;
+    /* Primary: Deep navy blue (from logo) */
+    --primary: 220 53% 23%;
+    --primary-foreground: 40 30% 98%;
 
     /* Secondary: Soft cream */
     --secondary: 40 30% 94%;
-    --secondary-foreground: 150 60% 18%;
+    --secondary-foreground: 220 53% 23%;
 
     /* Muted: Warm beige */
     --muted: 40 20% 94%;
-    --muted-foreground: 150 12% 35%;
+    --muted-foreground: 220 15% 38%;
 
     /* Accent: Metallic gold */
-    --accent: 42 65% 52%;
-    --accent-foreground: 150 60% 18%;
+    --accent: 41 53% 54%;
+    --accent-foreground: 220 53% 23%;
 
-    /* Brand gold (lighter, premium) */
-    --gold: 42 65% 52%;
-    --gold-foreground: 150 60% 18%;
+    /* Brand gold */
+    --gold: 41 53% 54%;
+    --gold-foreground: 220 53% 23%;
 
     --destructive: 0 84.2% 60.2%;
     --destructive-foreground: 0 0% 100%;
 
-    --border: 40 20% 88%;
-    --input: 40 20% 92%;
-    --ring: 150 60% 18%;
+    --border: 220 15% 88%;
+    --input: 220 15% 92%;
+    --ring: 220 53% 23%;
 
     --radius: 0.5rem;
 
@@ -62,15 +62,15 @@
     --sidebar-ring: 217.2 91.2% 59.8%;
     
     /* Brand Gradients */
-    --gradient-hero: linear-gradient(135deg, hsl(150 60% 12% / 0.85), hsl(150 60% 18% / 0.55));
-    --gradient-overlay: linear-gradient(180deg, hsl(150 60% 10% / 0.9), hsl(150 60% 10% / 0.15));
-    --gradient-gold: linear-gradient(135deg, hsl(42 70% 58%), hsl(38 60% 45%));
-    --gradient-emerald: linear-gradient(135deg, hsl(150 60% 18%), hsl(150 55% 28%));
+    --gradient-hero: linear-gradient(135deg, hsl(220 53% 16% / 0.85), hsl(220 53% 23% / 0.55));
+    --gradient-overlay: linear-gradient(180deg, hsl(220 53% 12% / 0.9), hsl(220 53% 12% / 0.15));
+    --gradient-gold: linear-gradient(135deg, hsl(41 60% 60%), hsl(38 55% 45%));
+    --gradient-emerald: linear-gradient(135deg, hsl(220 53% 23%), hsl(220 50% 32%));
 
     /* Elegant Shadows */
-    --shadow-architectural: 0 25px 50px -12px hsl(150 60% 10% / 0.35);
-    --shadow-elegant: 0 10px 30px -10px hsl(150 60% 10% / 0.2);
-    --shadow-gold: 0 10px 30px -10px hsl(42 65% 52% / 0.4);
+    --shadow-architectural: 0 25px 50px -12px hsl(220 53% 12% / 0.35);
+    --shadow-elegant: 0 10px 30px -10px hsl(220 53% 12% / 0.2);
+    --shadow-gold: 0 10px 30px -10px hsl(41 53% 54% / 0.4);
     
     /* Smooth Transitions */
     --transition-smooth: all 0.6s cubic-bezier(0.16, 1, 0.3, 1);
@@ -78,36 +78,36 @@
   }
 
   .dark {
-    --background: 150 30% 6%;
+    --background: 220 40% 7%;
     --foreground: 40 30% 95%;
 
-    --card: 150 25% 9%;
+    --card: 220 35% 10%;
     --card-foreground: 40 30% 95%;
 
-    --popover: 150 25% 9%;
+    --popover: 220 35% 10%;
     --popover-foreground: 40 30% 95%;
 
-    --primary: 42 65% 55%;
-    --primary-foreground: 150 60% 12%;
+    --primary: 41 53% 58%;
+    --primary-foreground: 220 53% 14%;
 
-    --secondary: 150 25% 14%;
+    --secondary: 220 30% 15%;
     --secondary-foreground: 40 30% 95%;
 
-    --muted: 150 20% 14%;
+    --muted: 220 25% 15%;
     --muted-foreground: 40 15% 65%;
 
-    --accent: 42 65% 52%;
-    --accent-foreground: 150 60% 12%;
+    --accent: 41 53% 54%;
+    --accent-foreground: 220 53% 14%;
 
-    --gold: 42 65% 55%;
-    --gold-foreground: 150 60% 12%;
+    --gold: 41 53% 58%;
+    --gold-foreground: 220 53% 14%;
 
     --destructive: 0 84.2% 60.2%;
     --destructive-foreground: 0 0% 100%;
 
-    --border: 150 20% 18%;
-    --input: 150 20% 14%;
-    --ring: 42 65% 55%;
+    --border: 220 25% 20%;
+    --input: 220 25% 15%;
+    --ring: 41 53% 58%;
     --sidebar-background: 240 5.9% 10%;
     --sidebar-foreground: 240 4.8% 95.9%;
     --sidebar-primary: 224.3 76.3% 48%;
