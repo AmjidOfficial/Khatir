@@ -10,13 +10,9 @@ const Footer = () => {
         <div className="grid gap-12 md:grid-cols-4">
           {/* Brand */}
           <div className="md:col-span-2">
-            <div className="flex items-center gap-3 mb-4">
-              <img src={logo} alt={COMPANY.name} className="h-14 w-14 object-contain bg-white/10 rounded-md p-1" />
-              <div>
-                <div className="text-lg font-semibold tracking-wide">{COMPANY.shortName}</div>
-                <div className="text-xs text-gold tracking-[0.2em] uppercase">Real Estate & Builders</div>
-              </div>
-            </div>
+            <a href="/" className="inline-flex items-center bg-white rounded-lg p-3 mb-5 shadow-sm" aria-label={COMPANY.name}>
+              <img src={logo} alt={COMPANY.name} className="h-20 w-auto object-contain" />
+            </a>
             <p className="text-sm text-primary-foreground/70 leading-relaxed max-w-md">
               {COMPANY.services}. Trusted property and construction partners serving Peshawar and beyond.
             </p>
