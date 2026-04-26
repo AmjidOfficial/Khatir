@@ -18,17 +18,13 @@ const Navigation = () => {
 
   return (
     <nav className="fixed top-0 left-0 right-0 z-50 bg-background/85 backdrop-blur-md border-b border-border">
-      <div className="container mx-auto px-6 py-3 flex items-center justify-between">
-        <a href="/" className="flex items-center gap-3">
-          <img src={logo} alt={COMPANY.name} className="h-11 w-11 object-contain" />
-          <div className="hidden sm:block leading-tight">
-            <div className="text-sm font-semibold tracking-wider text-foreground">
-              {COMPANY.shortName}
-            </div>
-            <div className="text-[10px] tracking-[0.2em] text-gold uppercase">
-              Real Estate & Builders
-            </div>
-          </div>
+      <div className="container mx-auto px-6 py-2 flex items-center justify-between">
+        <a href="/" className="flex items-center" aria-label={COMPANY.name}>
+          <img
+            src={logo}
+            alt={COMPANY.name}
+            className="h-16 md:h-20 w-auto object-contain drop-shadow-sm"
+          />
         </a>
 
         <div className="hidden md:flex items-center space-x-10">
