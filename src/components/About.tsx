@@ -49,11 +49,11 @@ const About = () => {
                 </div>
                 <div>
                   <h4 className="text-minimal text-gold mb-2">DEALS</h4>
-                  <p className="text-2xl font-light text-primary">500+</p>
+                  <p className="text-2xl font-light text-primary">1000+</p>
                 </div>
                 <div>
                   <h4 className="text-minimal text-gold mb-2">CLIENTS</h4>
-                  <p className="text-2xl font-light text-primary">300+</p>
+                  <p className="text-2xl font-light text-primary">500+</p>
                 </div>
               </div>
             </div>
