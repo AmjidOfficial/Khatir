@@ -1,5 +1,7 @@
 import { useParams, Link } from "react-router-dom";
 import Navigation from "@/components/Navigation";
+import Footer from "@/components/Footer";
+import WhatsAppButton from "@/components/WhatsAppButton";
 import { blogPosts } from "@/data/blogPosts";
 
 const BlogPost = () => {
@@ -145,6 +147,8 @@ const BlogPost = () => {
           </div>
         </div>
       </article>
+      <Footer />
+      <WhatsAppButton />
     </div>
   );
 };
