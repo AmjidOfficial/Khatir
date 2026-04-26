@@ -6,7 +6,7 @@ export const COMPANY = {
   services: "Consultancy · Construction · Projects",
   address: "Office #17, Commercial Area, AWT Housing Scheme, Kohat Road, Peshawar",
   city: "Peshawar, Pakistan",
-  founded: "2015",
+  founded: "2005",
   // Primary contacts
   contacts: [
     { name: "Ikhtiar Khatir", phone: "+92 301 8934165", phoneRaw: "+923018934165" },
