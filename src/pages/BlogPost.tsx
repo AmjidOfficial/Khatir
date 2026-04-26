@@ -104,7 +104,7 @@ const BlogPost = () => {
                         return `<p class="mb-4">${line}</p>`;
                       }
                     })
-                    .join('')
+                    .join(''))
                 }}
               />
             </div>
