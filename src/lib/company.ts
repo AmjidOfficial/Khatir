@@ -4,7 +4,7 @@ export const COMPANY = {
   shortName: "KHATIR",
   tagline: "Real Estate & Construction Company",
   services: "Consultancy · Construction · Projects",
-  address: "Shop #17, Commercial Area, AWT Housing Scheme, Kohat Road, Peshawar",
+  address: "Office #17, Commercial Area, AWT Housing Scheme, Kohat Road, Peshawar",
   city: "Peshawar, Pakistan",
   founded: "2015",
   // Primary contacts
