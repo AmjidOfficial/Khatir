@@ -1,4 +1,5 @@
 import { useParams, Link } from "react-router-dom";
+import DOMPurify from "dompurify";
 import Navigation from "@/components/Navigation";
 import Footer from "@/components/Footer";
 import WhatsAppButton from "@/components/WhatsAppButton";
@@ -81,7 +82,7 @@ const BlogPost = () => {
               <div 
                 className="text-muted-foreground leading-relaxed space-y-6"
                 dangerouslySetInnerHTML={{ 
-                  __html: post.content
+                  __html: DOMPurify.sanitize(post.content
                     .split('\n')
                     .map(line => {
                       if (line.startsWith('# ')) {
