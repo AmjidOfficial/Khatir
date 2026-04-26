@@ -37,12 +37,6 @@ const Footer = () => {
                   </a>
                 </li>
               ))}
-              <li className="flex items-center gap-2">
-                <Mail className="h-4 w-4 text-gold flex-shrink-0" />
-                <a href={`mailto:${COMPANY.email}`} className="hover:text-gold transition-colors">
-                  {COMPANY.email}
-                </a>
-              </li>
             </ul>
           </div>
 

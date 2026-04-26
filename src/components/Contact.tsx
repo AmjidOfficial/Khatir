@@ -40,18 +40,6 @@ const Contact = () => {
                   </div>
                 ))}
 
-                <div className="flex items-start gap-4">
-                  <Mail className="h-5 w-5 text-gold mt-1 flex-shrink-0" />
-                  <div>
-                    <h4 className="text-minimal text-muted-foreground mb-1">EMAIL</h4>
-                    <a
-                      href={`mailto:${COMPANY.email}`}
-                      className="text-lg text-primary hover:text-gold transition-colors"
-                    >
-                      {COMPANY.email}
-                    </a>
-                  </div>
-                </div>
               </div>
             </div>
 
