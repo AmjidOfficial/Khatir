@@ -5,12 +5,14 @@ import SocialLinks from "@/components/SocialLinks";
 
 const Footer = () => {
   return (
-    <footer className="border-t border-border bg-primary text-primary-foreground">
-      <div className="container mx-auto px-6 py-16">
+    <footer className="relative border-t border-gold/20 bg-gradient-luxe text-primary-foreground overflow-hidden">
+      <div className="pointer-events-none absolute inset-0 opacity-[0.04]" style={{backgroundImage:'radial-gradient(circle at 1px 1px, white 1px, transparent 0)', backgroundSize:'24px 24px'}} />
+      <div className="absolute top-0 left-0 right-0 h-px bg-gradient-to-r from-transparent via-gold to-transparent" />
+      <div className="container mx-auto px-6 py-16 relative">
         <div className="grid gap-12 md:grid-cols-4">
           {/* Brand */}
           <div className="md:col-span-2">
-            <a href="/" className="inline-flex items-center bg-white rounded-lg p-3 mb-5 shadow-sm" aria-label={COMPANY.name}>
+            <a href="/" className="inline-flex items-center bg-white rounded-xl p-3 mb-5 shadow-gold" aria-label={COMPANY.name}>
               <img src={logo} alt={COMPANY.name} className="h-20 w-auto object-contain" />
             </a>
             <p className="text-sm text-primary-foreground/70 leading-relaxed max-w-md">
