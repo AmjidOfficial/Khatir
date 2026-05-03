@@ -62,15 +62,18 @@
     --sidebar-ring: 217.2 91.2% 59.8%;
     
     /* Brand Gradients */
-    --gradient-hero: linear-gradient(135deg, hsl(150 60% 12% / 0.85), hsl(150 60% 18% / 0.55));
-    --gradient-overlay: linear-gradient(180deg, hsl(150 60% 10% / 0.9), hsl(150 60% 10% / 0.15));
-    --gradient-gold: linear-gradient(135deg, hsl(42 70% 58%), hsl(38 60% 45%));
-    --gradient-emerald: linear-gradient(135deg, hsl(150 60% 18%), hsl(150 55% 28%));
+    --gradient-hero: linear-gradient(135deg, hsl(150 70% 8% / 0.92) 0%, hsl(150 60% 14% / 0.75) 50%, hsl(150 60% 10% / 0.55) 100%);
+    --gradient-overlay: linear-gradient(180deg, hsl(150 60% 8% / 0.95) 0%, hsl(150 60% 10% / 0.4) 60%, hsl(150 60% 10% / 0.1) 100%);
+    --gradient-gold: linear-gradient(135deg, hsl(45 75% 65%) 0%, hsl(42 70% 55%) 50%, hsl(38 65% 42%) 100%);
+    --gradient-gold-shimmer: linear-gradient(110deg, hsl(42 65% 52%) 0%, hsl(48 85% 72%) 45%, hsl(42 65% 52%) 100%);
+    --gradient-emerald: linear-gradient(135deg, hsl(150 65% 12%) 0%, hsl(150 55% 22%) 100%);
+    --gradient-luxe: linear-gradient(135deg, hsl(150 65% 10%) 0%, hsl(150 50% 18%) 50%, hsl(42 50% 25%) 120%);
 
     /* Elegant Shadows */
-    --shadow-architectural: 0 25px 50px -12px hsl(150 60% 10% / 0.35);
-    --shadow-elegant: 0 10px 30px -10px hsl(150 60% 10% / 0.2);
-    --shadow-gold: 0 10px 30px -10px hsl(42 65% 52% / 0.4);
+    --shadow-architectural: 0 30px 80px -20px hsl(150 60% 8% / 0.5), 0 10px 30px -10px hsl(150 60% 8% / 0.3);
+    --shadow-elegant: 0 12px 40px -12px hsl(150 60% 10% / 0.25);
+    --shadow-gold: 0 15px 40px -10px hsl(42 65% 52% / 0.45), 0 0 0 1px hsl(42 65% 52% / 0.1);
+    --shadow-glow: 0 0 60px hsl(42 65% 52% / 0.25);
     
     /* Smooth Transitions */
     --transition-smooth: all 0.6s cubic-bezier(0.16, 1, 0.3, 1);
@@ -157,5 +160,53 @@
     to {
       @apply opacity-100 translate-y-0;
     }
+  }
+
+  /* Luxury Glass */
+  .glass {
+    background: hsl(var(--background) / 0.6);
+    backdrop-filter: blur(16px) saturate(140%);
+    -webkit-backdrop-filter: blur(16px) saturate(140%);
+    border: 1px solid hsl(var(--border) / 0.6);
+  }
+  .glass-dark {
+    background: hsl(150 60% 8% / 0.55);
+    backdrop-filter: blur(18px) saturate(140%);
+    -webkit-backdrop-filter: blur(18px) saturate(140%);
+    border: 1px solid hsl(42 65% 52% / 0.2);
+  }
+
+  /* Gold shimmer text */
+  .text-gold-shimmer {
+    background: var(--gradient-gold-shimmer);
+    background-size: 200% 100%;
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+    animation: shimmer 6s linear infinite;
+  }
+  @keyframes shimmer {
+    0% { background-position: 0% 50%; }
+    100% { background-position: 200% 50%; }
+  }
+
+  /* Hairline gold divider */
+  .divider-gold {
+    height: 1px;
+    background: linear-gradient(90deg, transparent, hsl(var(--gold) / 0.6), transparent);
+  }
+
+  /* Float animation */
+  @keyframes float {
+    0%, 100% { transform: translateY(0); }
+    50% { transform: translateY(-10px); }
+  }
+  .float-slow { animation: float 6s ease-in-out infinite; }
+
+  /* Scroll cue */
+  @keyframes scrollCue {
+    0% { transform: translateY(-30%); opacity: 0; }
+    50% { opacity: 1; }
+    100% { transform: translateY(30%); opacity: 0; }
   }
 }

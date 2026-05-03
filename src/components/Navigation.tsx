@@ -17,13 +17,13 @@ const Navigation = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
 
   return (
-    <nav className="fixed top-0 left-0 right-0 z-50 bg-background/85 backdrop-blur-md border-b border-border">
+    <nav className="fixed top-0 left-0 right-0 z-50 glass border-b border-gold/15">
       <div className="container mx-auto px-6 py-2 flex items-center justify-between">
-        <a href="/" className="flex items-center" aria-label={COMPANY.name}>
+        <a href="/" className="flex items-center group" aria-label={COMPANY.name}>
           <img
             src={logo}
             alt={COMPANY.name}
-            className="h-16 md:h-20 w-auto object-contain drop-shadow-sm"
+            className="h-14 md:h-16 w-auto object-contain transition-transform duration-500 group-hover:scale-105"
           />
         </a>
 
@@ -32,7 +32,7 @@ const Navigation = () => {
             <a
               key={l.href}
               href={l.href}
-              className="text-minimal text-muted-foreground hover:text-primary transition-colors duration-300"
+              className="relative text-minimal text-muted-foreground hover:text-primary transition-colors duration-300 after:absolute after:left-0 after:-bottom-1 after:h-px after:w-0 after:bg-gold after:transition-all hover:after:w-full"
             >
               {l.label}
             </a>
