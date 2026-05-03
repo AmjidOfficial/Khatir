@@ -107,12 +107,15 @@ export default {
         'gradient-hero': 'var(--gradient-hero)',
         'gradient-overlay': 'var(--gradient-overlay)',
         'gradient-gold': 'var(--gradient-gold)',
+        'gradient-gold-shimmer': 'var(--gradient-gold-shimmer)',
         'gradient-emerald': 'var(--gradient-emerald)',
+        'gradient-luxe': 'var(--gradient-luxe)',
       },
       boxShadow: {
         'architectural': 'var(--shadow-architectural)',
         'elegant': 'var(--shadow-elegant)',
         'gold': 'var(--shadow-gold)',
+        'glow': 'var(--shadow-glow)',
       },
       transitionTimingFunction: {
         'smooth': 'cubic-bezier(0.16, 1, 0.3, 1)',
