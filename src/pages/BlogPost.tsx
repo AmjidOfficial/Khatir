@@ -35,6 +35,21 @@ const BlogPost = () => {
 
   return (
     <div className="min-h-screen bg-background">
+      <SEO
+        title={`${post.title} | Khatir Insights`}
+        description={post.excerpt.slice(0, 158)}
+        path={`/blog/${post.id}`}
+        type="article"
+        image={post.image}
+        jsonLd={{
+          "@context": "https://schema.org",
+          "@type": "Article",
+          headline: post.title,
+          image: post.image,
+          datePublished: post.date,
+          author: { "@type": "Person", name: post.author },
+        }}
+      />
       <Navigation />
       
       {/* Article Header */}
