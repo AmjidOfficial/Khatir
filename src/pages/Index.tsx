@@ -6,10 +6,16 @@ import Portfolio from "@/components/Portfolio";
 import Contact from "@/components/Contact";
 import Footer from "@/components/Footer";
 import WhatsAppButton from "@/components/WhatsAppButton";
+import SEO from "@/components/SEO";
 
 const Index = () => {
   return (
     <div className="min-h-screen">
+      <SEO
+        title="Khatir Real Estate & Builders — Peshawar"
+        description="Trusted property dealers and builders in Peshawar. Verified houses, plots and commercial properties — consultancy, construction and projects."
+        path="/"
+      />
       <Navigation />
       <Hero />
       <Services />

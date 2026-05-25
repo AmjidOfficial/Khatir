@@ -3,6 +3,7 @@ import Navigation from "@/components/Navigation";
 import Footer from "@/components/Footer";
 import WhatsAppButton from "@/components/WhatsAppButton";
 import PropertyCard from "@/components/PropertyCard";
+import SEO from "@/components/SEO";
 import { properties } from "@/data/properties";
 
 const categories = ["ALL", "HOUSE", "PLOT", "COMMERCIAL", "APARTMENT"] as const;
@@ -20,6 +21,11 @@ const Work = () => {
 
   return (
     <div className="min-h-screen bg-background">
+      <SEO
+        title="Properties for Sale & Rent in Peshawar | Khatir"
+        description="Browse verified houses, plots, apartments and commercial properties in Peshawar — AWT Housing Scheme, Kohat Road and beyond."
+        path="/work"
+      />
       <Navigation />
 
       <section className="pt-32 pb-16">

@@ -3,6 +3,7 @@ import { Link } from "react-router-dom";
 import Navigation from "@/components/Navigation";
 import Footer from "@/components/Footer";
 import WhatsAppButton from "@/components/WhatsAppButton";
+import SEO from "@/components/SEO";
 import { blogPosts } from "@/data/blogPosts";
 
 const Blog = () => {
@@ -16,6 +17,11 @@ const Blog = () => {
 
   return (
     <div className="min-h-screen bg-background">
+      <SEO
+        title="Insights & Blog | Khatir Real Estate & Builders"
+        description="Insights on architecture, sustainable design and urban planning from Khatir Real Estate & Builders."
+        path="/blog"
+      />
       <Navigation />
       
       {/* Hero Section */}
