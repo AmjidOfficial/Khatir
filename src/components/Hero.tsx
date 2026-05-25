@@ -5,10 +5,15 @@ import { ArrowRight, MessageCircle } from "lucide-react";
 const Hero = () => {
   return (
     <section className="relative min-h-screen flex items-center justify-center overflow-hidden">
-      {/* Background image */}
-      <div
-        className="absolute inset-0 bg-cover bg-center bg-no-repeat scale-105"
-        style={{ backgroundImage: `url(${heroImage})` }}
+      {/* Background image — LCP candidate */}
+      <img
+        src={heroImage}
+        alt="Khatir Real Estate & Builders — premium properties in Peshawar"
+        width={1920}
+        height={1080}
+        fetchPriority="high"
+        decoding="async"
+        className="absolute inset-0 h-full w-full object-cover scale-105"
       />
       <div className="absolute inset-0 bg-gradient-hero" />
       {/* Subtle gold radial glow */}
@@ -30,7 +35,7 @@ const Hero = () => {
 
         <div className="mx-auto mb-8 h-px w-24 bg-gradient-to-r from-transparent via-gold to-transparent reveal-delayed" />
 
-        <p className="text-base md:text-xl text-white/85 font-light tracking-wide max-w-2xl mx-auto mb-12 reveal-delayed">
+        <p className="text-base md:text-xl text-white font-light tracking-wide max-w-2xl mx-auto mb-12 reveal-delayed">
           Khatir Real Estate &amp; Builders — Peshawar's trusted partner for premium properties,
           plots, and turn-key construction.
         </p>
@@ -63,7 +68,7 @@ const Hero = () => {
           ].map((s) => (
             <div key={s.v} className="text-center">
               <div className="text-3xl md:text-4xl font-light text-gold">{s.k}</div>
-              <div className="text-minimal text-white/60 mt-1">{s.v}</div>
+              <div className="text-minimal text-white/90 mt-1">{s.v}</div>
             </div>
           ))}
         </div>
