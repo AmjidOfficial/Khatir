@@ -3,6 +3,7 @@ import DOMPurify from "dompurify";
 import Navigation from "@/components/Navigation";
 import Footer from "@/components/Footer";
 import WhatsAppButton from "@/components/WhatsAppButton";
+import SEO from "@/components/SEO";
 import { blogPosts } from "@/data/blogPosts";
 
 const BlogPost = () => {

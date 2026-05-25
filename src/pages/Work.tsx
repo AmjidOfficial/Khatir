@@ -21,6 +21,11 @@ const Work = () => {
 
   return (
     <div className="min-h-screen bg-background">
+      <SEO
+        title="Properties for Sale & Rent in Peshawar | Khatir"
+        description="Browse verified houses, plots, apartments and commercial properties in Peshawar — AWT Housing Scheme, Kohat Road and beyond."
+        path="/work"
+      />
       <Navigation />
 
       <section className="pt-32 pb-16">
