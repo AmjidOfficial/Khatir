@@ -3,6 +3,7 @@ import Navigation from "@/components/Navigation";
 import Footer from "@/components/Footer";
 import WhatsAppButton from "@/components/WhatsAppButton";
 import PropertyCard from "@/components/PropertyCard";
+import SEO from "@/components/SEO";
 import { properties } from "@/data/properties";
 
 const categories = ["ALL", "HOUSE", "PLOT", "COMMERCIAL", "APARTMENT"] as const;
