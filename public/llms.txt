@@ -1,0 +1,18 @@
+# Khatir Real Estate & Builders
+
+> Trusted property dealers and builders in Peshawar — verified houses, plots, apartments and commercial properties, plus consultancy and turn-key construction.
+
+## Pages
+
+- [Home](/): Overview of Khatir Real Estate & Builders and featured properties.
+- [Properties](/work): Verified listings on Kohat Road and AWT Housing Scheme.
+- [Services](/services): Consultancy, construction and project development.
+- [About](/about): Company background, founded 2005 in Peshawar.
+- [Contact](/contact): Office address and phone contacts.
+- [Blog](/blog): Insights on architecture, design and urban planning.
+
+## Optional
+
+- [Sustainable Architecture](/blog/sustainable-architecture-future)
+- [Minimalism in Modern Living](/blog/minimalism-modern-living)
+- [Urban Planning](/blog/urban-planning-community-spaces)
