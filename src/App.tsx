@@ -19,7 +19,8 @@ const App = () => (
     <TooltipProvider>
       <Toaster />
       <Sonner />
-      <BrowserRouter>
+      {/* Added basename here so React Router knows it's hosted in the Khatir subfolder */}
+      <BrowserRouter basename="/Khatir">
         <Routes>
           <Route path="/" element={<Index />} />
           <Route path="/work" element={<Work />} />
