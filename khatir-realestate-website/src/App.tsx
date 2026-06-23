@@ -19,7 +19,8 @@ const App = () => (
     <TooltipProvider>
       <Toaster />
       <Sonner />
-      <BrowserRouter>
+      {/* ◄ Added basename here to tell React Router it is running inside the /Khatir/ folder */}
+      <BrowserRouter basename="/Khatir">
         <Routes>
           <Route path="/" element={<Index />} />
           <Route path="/work" element={<Work />} />
